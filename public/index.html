@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+
+    <link rel="stylesheet" href="../src/index.css">
+    <style>
+
+      .main-box {
+        width: 600px;
+        height: 620px;
+        position: absolute;
+      }
+
+      #twitter-icon {
+        color: #1597E5;
+      }
+
+      .google-icon {
+                        background: conic-gradient(from -45deg, #ea4335 110deg, #4285f4 90deg 180deg, #34a853 180deg 270deg, #fbbc05 270deg) 73% 55%/150% 150% no-repeat;
+                        -webkit-background-clip: text;
+                        background-clip: text;
+                        color: transparent;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+      /* or para Start */
+
+      .separator {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-top: -10px;
+            margin-bottom: -10px;
+        }
+
+        .separator::before,
+        .separator::after {
+        content: '';
+        flex: 1;
+        border-bottom: 1px solid gray;
+        width: 1/6;
+        opacity: 0.3;
+        }
+
+        .separator:not(:empty)::before {
+        margin-right: .25em;
+        }
+
+        .separator:not(:empty)::after {
+        margin-left: .25em;
+        }
+
+      /* or para End */
+
+      /* Button BG Manipulation Start */
+
+      .google-btn {
+          background-color: #E8F6EF;
+      }
+
+      .apple-btn {
+          background-color: #E7E7DE;
+      }
+
+      .next-btn {
+            opacity: 0.8;
+        }
+
+      .forgot-btn {
+        background-color: #E7E7DE;
+      }
+
+      .close-btn {
+        border-radius: 50%;
+        background-color: #E7E7DE;
+      }
+
+      /* Div */
+
+      .changeDivColor {
+        border-color: blue;
+      }
+
+      .sticky-div {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+
+      /*  */
+
+      /* Button BG Manipulation End */
+
+      /* Input Placeholder Animation Start */
+
+      input:focus ~ .floating-label,
+      input:not(:focus):valid ~ .floating-label{
+        top: 8px;
+        bottom: 10px;
+        left: 20px;
+        color: blue;
+        font-size: 11px;
+        opacity: 1;
+      }
+
+      .inputText {
+        outline: none;
+        font-size: 14px;
+        width: 200px;
+        height: 35px;
+      }
+
+      .floating-label {
+        pointer-events: none;
+        left: 20px;
+        top: 18px;
+        transition: 0.2s ease all;
+      }
+
+      /* Input Placeholder Animation End */
+
+    </style>
+  </head>
+  <body class="bg-zinc-400">
+    <div id="root" class=""></div>
+    <script src="../src/index.js"></script>
+
+    
+  </body>
+</html>
